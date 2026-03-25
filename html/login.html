@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In / Register - Andre Huang</title>
+    
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/script.js" defer></script>
+    <script src="../js/auth.js" defer></script>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div class="container d-flex justify-content-center align-items-center flex-grow-1" style="margin-top: 80px; margin-bottom: 60px;">
+        <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg border-0">
+                <div class="card-body p-5">
+                    
+                    <h3 class="text-center mb-4 fw-bold">Welcome Back</h3>
+
+                    <ul class="nav nav-tabs nav-justified mb-4" id="loginRegisterTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Log In</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="loginRegisterContent">
+                        
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="alert alert-info" role="alert">
+                                Login is coming soon.
+                            </div>
+                            <form action="" method="POST">
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="loginEmail" name="email" placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                        <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Enter your password" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary w-100">Coming Soon</button>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade show" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <form action="" method="POST">
+                                <div class="mb-3">
+                                    <label for="registerName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="registerName" name="name" placeholder="Full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" name="email" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword" name="password" placeholder="Create password" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="registerConfirmPassword" name="confirm_password" placeholder="Repeat password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
+                            </form>
+                        </div>
+
+                    </div> </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="index.html" class="text-light text-decoration-none opacity-75"><i class="bi bi-arrow-left me-1"></i> Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>  
